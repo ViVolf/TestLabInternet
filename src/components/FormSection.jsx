@@ -40,7 +40,7 @@ export default function FormSection() {
             <h1 id="form-h1">Отправить форму</h1>
             <form id="form-container" onSubmit={handleSubmit}>
                 <div className="form-input-wrapper">
-                    <input className="form-input-text" type="text" id="form-input-text-name" name="name" required placeholder="" pattern="[a-zA-Z]{2,15}" onChange={handleInputChange} />
+                    <input className="form-input-text" type="text" id="form-input-text-name" name="name" required placeholder="" pattern="[a-zA-Zа-яА-Я]{2,15}" onChange={handleInputChange} />
                     <label className="form-input-text-label" htmlFor="form-input-text-name">Имя</label>
                     <p className="form-input-text-helper-idle">Заполните поле</p>
                     <p className="form-input-text-helper-invalid">Недопустимый формат</p>
