@@ -1,0 +1,23 @@
+@import "default_variables";
+
+#additional-info {
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color_grey_extralight;
+
+    #additional-info-container {
+        width: 1270px;
+        max-width: 95%;
+
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

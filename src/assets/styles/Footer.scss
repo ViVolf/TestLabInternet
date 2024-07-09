@@ -1,0 +1,18 @@
+@import "default_variables";
+
+#footer {
+    width: 100vw;
+    height: 88px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid $color_grey_light;
+
+    #footer-text {
+        font-size: $font_size_p18;
+        line-height: 32px;
+        color: $color_black;
+    }
+}

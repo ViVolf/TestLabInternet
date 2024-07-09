@@ -1,0 +1,79 @@
+@import "default_variables";
+
+#income-section {
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $color_black;
+
+    #income-container {
+
+        width: 1216px;
+        max-width: 90%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #income-text {
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+
+            #income-text-h2 {
+                font-weight: $font_weight_bold;
+                font-size: $font_size_h3;
+                line-height: 40px;
+                margin-bottom: 5%;
+            }
+
+            #income-text-p {
+                font-size: $font_size_p16;
+                line-height: 28px;
+                color: $color_grey_dark;
+            }
+        }
+
+        #income-img {
+            position: relative;
+
+            width: 50%;
+
+            #income-front-img {
+                position: absolute;
+                width: 100%;
+            }
+
+            #income-back-img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    #income-section {
+        #income-container {
+            flex-wrap: wrap-reverse;
+
+            #income-text {
+                #income-text-h2 {
+                   font-size: $font_size_h5; 
+                }
+            }
+
+            #income-text,
+            #income-img {
+                width: 85%;
+            }
+
+        }
+    }
+}

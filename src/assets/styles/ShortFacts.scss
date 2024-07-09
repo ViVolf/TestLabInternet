@@ -1,0 +1,44 @@
+@import "default_variables";
+
+#short-facts {
+    padding-top: 75px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+
+    #short-facts-h1 {
+        font-weight: $font_weight_bold;
+        font-size: $font_size_h2;
+        color: $color_black;
+    }
+
+    #facts-container {
+        margin-top: 5%;
+        width: 1268px;
+        max-width: 100%;
+
+        #facts {
+            margin-left: 2%;
+            margin-right: 2%;
+            box-sizing: border-box;
+
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #short-facts {
+        #short-facts-h1 {
+            font-size: $font_size_h4;
+            margin-bottom: 10%;
+        }
+    }
+}

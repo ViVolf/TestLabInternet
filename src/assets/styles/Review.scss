@@ -1,0 +1,41 @@
+@import "default_variables";
+
+.review {
+    height: 100%;
+    background-color: $color_white;
+
+    user-select: none;
+
+    .review-head {
+        padding-top: 5%;
+        padding-left: 5%;
+
+        display: flex;
+        column-gap: 4%;
+
+        .review-avatar {
+            width: 44px;
+            height: 44px;
+        }
+
+        .review-head-info {
+
+            .review-head-name {
+                padding-bottom: 5%;
+            }
+
+            .review-head-city {
+                font-size: $font_size_p12;
+                line-height: 16px;
+                color: $color_grey_dark;
+            }
+        }
+    }
+
+    .review-text-p {
+        padding: 7.5% 5% 5% 5%;
+
+        font-size: $font_size_p14;
+        line-height: 24px;
+    }
+}
